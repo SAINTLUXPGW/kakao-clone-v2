@@ -61,3 +61,13 @@
 .friend__now-listening i {
     font-size: 11px;
 }
+
+.friend__add-btn{
+    display: flex;
+    padding: 12px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f5f5F5;
+}
