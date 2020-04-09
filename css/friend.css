@@ -46,3 +46,18 @@
 .friend__content .friend__status {
     font-size: 12px;
 }
+
+.friend .friend__now-listening {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+    border: 2px solid #52e084;
+}
+
+.friend__now-listening span {
+    opacity: 0.7;
+}
+
+.friend__now-listening i {
+    font-size: 11px;
+}
