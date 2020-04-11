@@ -53,6 +53,7 @@
     border-top: 1px solid #f7f7f7;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 0px 20px;
     padding-top: 30px;
@@ -72,14 +73,11 @@
   
   .message {
     display: flex;
-    align-items: center;
-    width: 50%;
+    align-items: flex-start;
+    margin-bottom: 20px;
   }
   
-  .message .message__content {
-    width: 80%;
-  }
-  
+
   .incoming-message {
     align-self: flex-start;
   }
@@ -91,7 +89,7 @@
   .incoming-message img {
     width: 30px;
     border-radius: 15px;
-    margin-right: 20px;
+    margin-right: 15px;
   }
   
   .message .message__bubble {
@@ -100,8 +98,28 @@
       0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
     padding: 10px 20px;
     border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    display: block;
   }
 
   .chat__messages .message__bubble {
       font-size: 12px;
+  }
+
+  .incoming-message .message__author{
+    margin-top: 10px;
+    display: block;
+    font-weight: 600;
+    font-size : 12px;
+  }
+
+  .incoming-message .message__bubble {
+    border-bottom-left-radius: 0px;
+    background-image: linear-gradient(to right, #7b4397, #dc2430);
+  }
+
+  .sent-message .message__bubble {
+    border-bottom-right-radius: 0px;
+    background-image: linear-gradient(to left, #00c6ff, #0072ff);
   }
