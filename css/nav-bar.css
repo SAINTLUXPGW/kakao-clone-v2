@@ -8,17 +8,17 @@
     border-top: 1px solid #f7f7f7;
 }
 
-.nav .nav__list{
+.nav .nav__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav i{
+.nav i {
     font-size: 20px;
 }
 
-.nav .nav__list-link{
+.nav .nav__list-link {
     position: relative;
 }
 
@@ -35,4 +35,20 @@
     align-items: center;
     border-radius: 50%;
     font-size: 10px;
+}
+
+@keyframes showNavBar {
+    from {
+        transform: translateY(80px);
+    }
+
+    to {
+        transform: none;
+    }
+}
+
+.nav {
+    transform: translateY(80px);
+    animation: showNavBar 0.5s ease-out forwards;
+    animation-delay: 0.5s;
 }
